@@ -44,6 +44,17 @@
   <meta property="og:title" content="Home">
   <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
+  <style>
+    @media (max-width: 600px) {
+      .u-logo-image-1 {
+        width: 120px !important;
+        max-width: 80vw !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  </style>
 </head>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -157,16 +168,20 @@
               <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/static/products/products.html">Store</a>
               </li>-->
               </ul>
-              <a href="#"
+
+
+              <!--  descativer le bouton de reservation  -->
+              <!-- <a href="#"
                 class="u-align-center u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-text-active-white u-btn-1">
-                Book an appointment</a>
+                Book an appointment</a> 
               <div class="u-social-icons u-social-icons-1">
                 <a class="u-social-url" title="facebook" target="_blank" href="https://facebook.com/name"><span
                     class="u-icon u-social-facebook u-social-icon u-text-palette-1-base u-icon-1"><svg
                       class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
                       <use xlink:href="#svg-6262"></use>
 
-                </a>
+               
+              --> 
                 <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/name"><span
                     class="u-icon u-social-icon u-social-twitter u-text-palette-1-base u-icon-2"><svg class="u-svg-link"
                       preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.2 112.2" style="">
@@ -835,16 +850,15 @@
 /* Responsive */
 @media (max-width: 768px) {
   .u-avis-1 {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    width: 100% !important;
   }
-  
-  .u-section-avis .u-text-1 {
-    font-size: 2rem;
-  }
-  
   .u-avis-item {
-    padding: 25px 20px;
+    width: 100% !important;
+    margin: 0 auto !important;
+    min-width: 0 !important;
+    max-width: 95vw !important;
   }
 }
 
@@ -863,11 +877,11 @@
 // --- Carrousel pour Réparation ---
 (function() {
   const imagesReparation = [
-    '/static/new/1.jpg', '/static/new/2.jpg', '/static/new/3.jpg', '/static/new/4.jpg', '/static/new/5.jpg',
+   '/static/new/2.jpg', '/static/new/3.jpg', '/static/new/4.jpg', '/static/new/5.jpg',
     '/static/new/6.jpg', '/static/new/7.jpg', '/static/new/8.jpg', '/static/new/9.jpg', '/static/new/10.jpg'
   ];
   const imagesCustom = [
-    '/static/new/1.jpg', '/static/new/2.jpg', '/static/new/3.jpg', '/static/new/4.jpg', '/static/new/5.jpg',
+     '/static/new/2.jpg', '/static/new/3.jpg', '/static/new/4.jpg', '/static/new/5.jpg',
     '/static/new/6.jpg', '/static/new/7.jpg', '/static/new/8.jpg', '/static/new/9.jpg', '/static/new/10.jpg'
   ];
   function setupCarrousel(className, images) {
