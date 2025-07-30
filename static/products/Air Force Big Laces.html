@@ -141,9 +141,9 @@
                         <div class="u-product-features">
                             <h3 class="u-text u-text-3">Caractéristiques</h3>
                             <ul class="u-features-list">
-                                <li>✅ <strong>Fait main</strong> - Chaque paire est unique</li>
-                                <li>✅ <strong>Big Laces</strong> - Lacets extra larges</li>
-                                <li>✅ <strong>Design exclusif</strong> - Personnalisation sur mesure</li>
+                                <li> <strong>Fait main</strong> - Chaque paire est unique</li>
+                                <li> <strong>Big Laces</strong> - Lacets extra larges</li>
+                                <li> <strong>Design exclusif</strong> - Personnalisation sur mesure</li>
                             </ul>
                         </div>
 
@@ -181,7 +181,8 @@
                             <h3 class="u-text u-text-7">Délai de fabrication</h3>
                             <p class="u-text u-text-8">
                                 <strong>7-10 jours ouvrables</strong> pour la customisation et la préparation.
-                                Livraison en France métropolitaine incluse.
+                                Livraison rapide et sécurisée.
+        
                             </p>
                         </div>
 
@@ -234,7 +235,7 @@
                     <div class="u-form-group u-form-select u-form-group-3">
                         <label for="select-f58c" class="u-label">Taille souhaitée</label>
                         <div class="u-form-select-wrapper">
-                            <select id="select-f58c" name="size" class="u-input u-input-rectangle" required="">
+                            <select id="select-f58c" name="size" class="u-input u-input-rectangle"  required="">
                                 <option value="">Choisissez votre taille</option>
                                 <option value="36">36</option>
                                 <option value="37">37</option>
@@ -254,12 +255,6 @@
                     <div class="u-form-group u-form-message">
                         <label for="message-3b9a" class="u-label">Détails de customisation (optionnel)</label>
                         <textarea placeholder="Décrivez vos préférences de customisation, couleurs, etc." rows="4" cols="50" id="message-3b9a" name="message" class="u-input u-input-rectangle"></textarea>
-                    </div>
-                    <div class="u-form-group u-form-uploader">
-                        <label for="upload-e8c6" class="u-label">Photos de référence (optionnel)</label>
-                        <div class="u-form-uploader-container">
-                            <input type="file" id="upload-e8c6" name="images" class="u-input u-input-rectangle" multiple="multiple" accept="image/*">
-                        </div>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
                         <a href="#" class="u-btn u-btn-submit u-button-style">Envoyer ma commande</a>
@@ -281,6 +276,12 @@
     }
     .u-section-1 .u-sheet-1 {
   min-height: 595px;
+    }
+
+    .u-input u-input-rectangle {
+        background: #000000;
+        color: #000000;
+        border: 1px solid #555555;
     }
 
     .u-section-1 .u-product-1 {
@@ -400,7 +401,7 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 840px) {
   .u-section-1 .u-product-1 {
     min-height: 926px;
   }
@@ -500,16 +501,28 @@
         padding: 40px 0;
     }
 
-    /* Styles pour la page produit - Fond blanc */
+/* Styles pour la page produit - Fond blanc */
+.u-product-info {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
     .u-product-info {
-        padding: 30px;
-        background: #ffffff;
-        border-radius: 15px;
-        margin-top: 30px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        border: 1px solid #e0e0e0;
-        color: #333333;
+        border: 0px;
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 10px;
+        font-size: 14px;
     }
+}
+
 
     .u-product-features {
         margin: 120px 0;
@@ -703,7 +716,7 @@
     }
 
     /* Responsive amélioré - Fond blanc */
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         .u-product-info {
             padding: 20px;
             margin-top: 20px;
@@ -731,7 +744,7 @@
         }
         
         .u-back-image {
-            height: 300px;
+            height: 350px;
         }
         
         .u-text-3, .u-text-4, .u-text-5, .u-text-7 {
@@ -739,7 +752,7 @@
         }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 512px) {
         .u-sizes-grid {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -797,12 +810,13 @@
     }
 
     .u-input {
-        background: linear-gradient(145deg, #2a2a2a, #333);
+        /*background: linear-gradient(145deg, #2a2a2a, #333);*/
         border: 2px solid #444;
         border-radius: 8px;
         padding: 12px 15px;
         transition: all 0.3s ease;
-        color: #ffffff;
+        color: #000000;
+        
     }
 
     .u-input::placeholder {
